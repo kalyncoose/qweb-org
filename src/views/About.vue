@@ -6,7 +6,7 @@
           <v-col></v-col>
           <v-col md>
             <div class="mx-auto">
-              <h1>About</h1>
+              <h1>Coming Soon</h1>
             </div>
           </v-col>
           <v-col></v-col>

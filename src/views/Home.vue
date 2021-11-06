@@ -44,7 +44,7 @@
       </v-row>
       <v-row>
         <v-col cols="0">
-          <blockquote class="quote">Designed by the test automation experts behind <a href="https://robotframework.org" target="_blank">Robot Framework</a>, QWeb was crafted around central themes of low maintenance and highly-readable web automation.</blockquote>
+          <blockquote class="quote-orange">Designed by the test automation experts behind <a href="https://robotframework.org" target="_blank">Robot Framework</a>, QWeb was crafted around central themes of low maintenance and highly-readable web automation.</blockquote>
         </v-col>
       </v-row>
       <v-row>
@@ -58,11 +58,13 @@
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-xml</v-icon>Avoid XPaths</v-card-title>
             <v-card-text class="feature-details">Dynamically locate elements using the plain text you provide it. Easily interact with what you see on the screen.</v-card-text>
-            <v-card rounded flat outlined>
-              <v-card-text class="code"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
-                Type Text&nbsp;&nbsp;&nbsp;Username&nbsp;&nbsp;admin<br />
-                Type Text&nbsp;&nbsp;&nbsp;Password&nbsp;&nbsp;password123<br />
-                Click Text&nbsp;&nbsp;Log In
+            <v-card rounded flat>
+              <v-card-text class="code-lg"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
+                Type Text&nbsp;&nbsp;Username&nbsp;&nbsp;admin<br />
+                Click Text&nbsp;&nbsp;Settings<br />
+                Click Checkbox&nbsp;&nbsp;Notifications&nbsp;&nbsp;on<br />
+                Drop Down&nbsp;&nbsp;User Role&nbsp;&nbsp;Member<br />
+                Verify Text&nbsp;&nbsp;Updated successfully
               </v-card-text>
             </v-card>
           </v-card>
@@ -71,18 +73,37 @@
           <v-card outlined class="feature-card">
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-anchor</v-icon>Anchor & Index</v-card-title>
             <v-card-text class="feature-details">Anchor to nearby text, use an index, or use attributes to locate the element you want.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-lg"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
+                Type Text&nbsp;&nbsp;Username&nbsp;&nbsp;admin&nbsp;&nbsp;anchor=Password<br />
+                Click Text&nbsp;&nbsp;Next&nbsp;&nbsp;anchor=Close<br />
+                Drop Down&nbsp;&nbsp;Shipping&nbsp;&nbsp;Fast&nbsp;&nbsp;anchor=Checkout<br />
+                Click Text&nbsp;&nbsp;Checkout&nbsp;&nbsp;anchor=2<br />
+                Verify Text&nbsp;&nbsp;1234&nbsp;&nbsp;anchor=Order Number
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-timer-sand-empty</v-icon>Intelligent Sleeping</v-card-title>
             <v-card-text class="feature-details">Built-in mechanism to handle latency automatically.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                For example, the latency of pages loading and elements being enabled/disabled are handled by keywords. Timeouts are typically 10-20 seconds and can be adjusted at any time.
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-file-cog-outline</v-icon>Low Test Maintenance</v-card-title>
             <v-card-text class="feature-details">Superior location strategies make your tests immune to UI changes.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                For example, if the application is updated and a button moves, QWeb's keywords will dynamically find the button and not break the test.
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
       </v-row>
@@ -91,11 +112,13 @@
           <v-card outlined>
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-xml</v-icon>Avoid XPaths</v-card-title>
             <v-card-text class="feature-details">Dynamically locate elements using the plain text you provide it. Easily interact with what you see on the screen.</v-card-text>
-            <v-card rounded flat outlined>
-              <v-card-text class="code"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
-                                        Type Text&nbsp;&nbsp;&nbsp;Username&nbsp;&nbsp;admin<br />
-                                        Type Text&nbsp;&nbsp;&nbsp;Password&nbsp;&nbsp;password123<br />
-                                        Click Text&nbsp;&nbsp;Log In
+            <v-card rounded flat>
+              <v-card-text class="code-sm"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
+                                        Type Text&nbsp;&nbsp;Username&nbsp;&nbsp;admin<br />
+                                        Click Text&nbsp;&nbsp;Settings<br />
+                                        Click Checkbox&nbsp;&nbsp;Notifications&nbsp;&nbsp;on<br />
+                                        Drop Down&nbsp;&nbsp;User Role&nbsp;&nbsp;Member<br />
+                                        Verify Text&nbsp;&nbsp;Updated successfully
               </v-card-text>
             </v-card>
           </v-card>
@@ -104,56 +127,113 @@
           <v-card outlined>
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-anchor</v-icon>Anchor & Index</v-card-title>
             <v-card-text class="feature-details">Anchor to nearby text, use an index, or use attributes to locate the element you want.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-sm"><u>Keyword</u>&nbsp;&nbsp;&nbsp;&nbsp;<u>Locator</u>&nbsp;&nbsp;&nbsp;<u>Value</u><br />
+                Type Text&nbsp;&nbsp;Username&nbsp;&nbsp;admin&nbsp;&nbsp;anchor=Password<br />
+                Click Text&nbsp;&nbsp;Next&nbsp;&nbsp;anchor=Close<br />
+                Drop Down&nbsp;&nbsp;Shipping&nbsp;&nbsp;Fast&nbsp;&nbsp;anchor=Checkout<br />
+                Click Text&nbsp;&nbsp;Checkout&nbsp;&nbsp;anchor=2<br />
+                Verify Text&nbsp;&nbsp;1234&nbsp;&nbsp;anchor=Order Number
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
         <v-col cols="auto">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-timer-sand-empty</v-icon>Intelligent Sleeping</v-card-title>
             <v-card-text class="feature-details">Built-in mechanism to handle latency automatically.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-sm">
+                For example, the latency of pages loading and elements being enabled/disabled are handled by keywords. Timeouts are typically 10-20 seconds and can be adjusted at any time.
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
         <v-col cols="auto">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-file-cog-outline</v-icon>Low Test Maintenance</v-card-title>
             <v-card-text class="feature-details">Superior location strategies make your tests immune to UI changes.</v-card-text>
+            <v-card rounded flat>
+              <v-card-text class="code-sm">
+                For example, if the application is updated and a button moves, QWeb's keywords will dynamically find the button and not break the test.
+              </v-card-text>
+            </v-card>
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
-  </div>
-  <!--
-    <v-container fluid>
       <v-row>
-        <v-col>
-          <span class="loud">Open Source</span>
-          <v-divider></v-divider>
+        <v-col cols="0" style="margin:1rem;">
         </v-col>
       </v-row>
-      <v-row class="cta">
-        <v-col class="text-left">
-          <v-card outlined>
-            <v-icon class="loud-icon mt-4 mx-4" color="primary">mdi-github</v-icon>
-            <v-card-title><b>GitHub</b></v-card-title>
-            <v-card-text>Contribute to the library on GitHub.</v-card-text>
-            <v-card-actions>
-              <v-btn outlined block href="https://github.com/qentinelqi/qweb/" target="_blank">Read More</v-btn>
-            </v-card-actions>
+      <v-row>
+        <v-col cols="0">
+          <blockquote class="quote-blue">QWeb frees automation engineers from struggling with managing XPaths and unreliable sleeps. Most of all, QWeb provides immunity to user interface changes, dramatically reducing time spent on test maintenance.</blockquote>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="0" class="text-center">
+          <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Why use QWeb?</span>
+          <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Why use QWeb?</span>
+        </v-col>
+      </v-row>
+      <v-row v-if="$vuetify.breakpoint.mdAndUp">
+        <v-col cols="6">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-github</v-icon>Open Source</v-card-title>
+            <v-card-text class="feature-details">Developed by passionate test automation experts around the world. Get involved and share our love of open-source.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://github.com/qentinelqi/qweb" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-code-tags
+              </v-icon>
+              Contribute
+            </v-btn>
           </v-card>
         </v-col>
-        <v-col class="text-left">
-          <v-card outlined>
-            <v-icon class="loud-icon mt-4 mx-4" color="primary">mdi-robot-happy-outline</v-icon>
-            <v-card-title><b>Robot Framework</b></v-card-title>
-            <v-card-text>QWeb is a library for Robot Framework.</v-card-text>
-            <v-card-actions>
-              <v-btn outlined block href="https://robotframework.org/" target="_blank">Read More</v-btn>
-            </v-card-actions>
+        <v-col cols="6">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
+            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org/" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-tools
+              </v-icon>
+              Read More
+            </v-btn>
           </v-card>
+        </v-col>
+      </v-row>
+      <v-row v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">
+        <v-col cols="auto">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-github</v-icon>Open Source</v-card-title>
+            <v-card-text class="feature-details">Developed by passionate test automation experts around the world. Get involved and share our love of open-source.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://github.com/qentinelqi/qweb" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-code-tags
+              </v-icon>
+              Contribute
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
+            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org/" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-tools
+              </v-icon>
+              Read More
+            </v-btn>
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="0" style="margin:1rem;">
         </v-col>
       </v-row>
     </v-container>
   </div>
-  -->
 </template>
 
 <script>
@@ -199,11 +279,20 @@ export default {
   padding-right:10%;
 }
 
-.code {
+.code-lg {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
+  color: #E54B00 !important;
+}
+
+.code-sm {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #E54B00 !important;
 }
 
 .splash-lg {
@@ -238,7 +327,7 @@ export default {
   line-height: normal;
 }
 
-.quote {
+.quote-orange {
   font-family: 'Roboto', sans-serif;
   font-weight:300;
   font-size:2rem;
@@ -251,6 +340,22 @@ export default {
   text-align:left;
   border-left:5px solid #E54B00;
   background:rgba(229,75,0,0.1);
+  padding: 10px 20px;
+}
+
+.quote-blue {
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size:2rem;
+  display:block;
+  width:100%;
+  float:right;
+  clear: right;
+  color:#596275;
+  line-height:normal;
+  text-align:left;
+  border-right:5px solid #0180a0;
+  background:rgba(1,128,160,0.1);
   padding: 10px 20px;
 }
 
@@ -276,8 +381,7 @@ export default {
 }
 
 .feature-card {
-  max-width: 100vw;
-  height: 300px;
+  width: inherit;
 }
 
 .feature-icon {
