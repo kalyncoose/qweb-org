@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2163px" height="1024px" viewBox="0 0 2163 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 44</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <pattern id="pattern-1" width="6.3" height="6.3" x="1149.31545" y="337.018039" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-2" transform="scale(0.15,0.15)"></use>
+        </pattern>
+        <image id="image-2" width="42" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAABGdBTUEAALGN5fIAKQAAAS5JREFUWAntlL1qAkEUhe/VaWNlG8EQEMUynQQMvoHYp8sbpBF8Ah9D7PQRkghiZ612EfcVLHdncnf9KcSZLMygzRmYZu7dc85+O3uJsEAABEAABEAABEAABEDgfgQ4lHWr03ulOP4k4peDplmSUsPF12QewqMYQqT11u2bJBmJVk32w3HXSJv3ylMjjrZr77DeRFOSJk5mRKYgAa8s1qyKbV+yFvErfraj7HPbQqYPSS3rsQnkO/cPer6TLsPTvXX1uGsBgroNQlUDBJW/+9+Vp8ct4h9URpCMJG23kVrWY+/IU/EeT9HvavdYrScSti2GF1NE/vgCDxbf03GeMK4e76CpeLTdzCvPzR/WuszEJdl7STxjpT5ChHS9AGogAAIgAAIgAAIgAAIgcAsCfx7gQp2A+4ORAAAAAElFTkSuQmCC"></image>
+        <pattern id="pattern-3" width="6.3" height="6.3" x="81.2189541" y="80.904464" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-4" transform="scale(0.15,0.15)"></use>
+        </pattern>
+        <image id="image-4" width="42" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAABGdBTUEAALGN5fIAKQAAAOFJREFUWAntlEEKwjAQRTOeya3gYXqFbARdiZtcoYcR3HqmjmNCkEImBmekm18ogUzm/99HMyHgAQEQAAEQAAEQAAEQAIHtCJCXNU/TQbRiINpnTeanrInm+eHh4RJUQp4kzFXetR7REpjPEvZmDbsW/kEtkyS6S6Bds72EPVrJtsWbjupmVEO+W8oHRLV7sGAPWv/JnuHImV6/1OxBvxh4le1By+3u5xk501dwIZpkJC2qT6kltT5YMBPNt5no0gz7GU/mWWoeTxXIvwd+9cEKAiAAAiAAAiAAAiAAAlsQeAGqMDkE77oxYAAAAABJRU5ErkJggg=="></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-44" transform="translate(-70.000000, -97.000000)">
+            <path d="M1524.89941,1176.17925 C1729.88138,1176.17925 1896.0521,1010.0769 1896.0521,805.179254 C1896.0521,600.281612 1763.36429,343.318039 1558.38232,343.318039 C1353.40035,343.318039 1527.24859,706.426414 1256.96774,805.179254 C986.686884,903.932095 1319.91744,1176.17925 1524.89941,1176.17925 Z" id="Oval" fill="url(#pattern-1)" opacity="0.4" transform="translate(1525.833776, 759.748647) scale(-1, -1) rotate(30.000000) translate(-1525.833776, -759.748647) "></path>
+            <path d="M1921.93665,741 C2093.42106,741 2232.43665,601.984415 2232.43665,430.5 C2232.43665,259.015585 2093.42106,120 1921.93665,120 C1750.45223,120 1923.90193,347.851059 1697.78959,430.5 C1471.67725,513.148941 1750.45223,741 1921.93665,741 Z" id="Oval-Copy" fill="#E1F7FB"></path>
+            <path d="M396.4556,708.204464 C567.940015,708.204464 706.9556,569.188879 706.9556,397.704464 C706.9556,226.220049 567.940015,87.204464 396.4556,87.204464 C224.971185,87.204464 398.420883,315.055523 172.308541,397.704464 C-53.8038004,480.353405 224.971185,708.204464 396.4556,708.204464 Z" id="Oval-Copy-12" fill="url(#pattern-3)" fill-rule="nonzero" transform="translate(397.237277, 397.704464) rotate(20.000000) translate(-397.237277, -397.704464) "></path>
+        </g>
+    </g>
+</svg>
