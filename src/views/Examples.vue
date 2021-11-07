@@ -1,15 +1,18 @@
 <template>
-  <div>
-    <v-navigation-drawer fixed left expand-on-hover clipped mini-variant permanent>
+  <div id="#top">
+    <v-fab-transition>
+      <v-btn href="#top"
+          color="primary"
+          dark
+          fixed
+          bottom
+          right
+          fab>
+        <v-icon>mdi-chevron-up</v-icon>
+      </v-btn>
+    </v-fab-transition>
+    <v-navigation-drawer fixed left :expand-on-hover="this.$vuetify.breakpoint.mdAndUp" clipped mini-variant permanent>
       <v-list dense nav style="padding-top:5rem;">
-        <v-list-item href="#home">
-          <v-list-item-icon>
-            <v-icon>mdi-home</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
         <v-list-item href="#browser">
           <v-list-item-icon>
             <v-icon>mdi-web</v-icon>
@@ -58,12 +61,12 @@
             <v-list-item-title>Tables</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item href="#get-data">
+        <v-list-item href="#getters">
           <v-list-item-icon>
             <v-icon>mdi-application-import</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title>Get Data</v-list-item-title>
+            <v-list-item-title>Getters</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item href="#files">
@@ -118,16 +121,7 @@
       <v-row>
         <v-col cols="auto" class="text-left">
           <span class="body-text">
-            Examples are coming soon...
-          </span>
-        </v-col>
-      </v-row>
-      <v-row id="home">
-        <v-col cols="auto" class="text-left">
-          <span class="hook-mini" style="color: #0180a0 !important;">Home</span>
-          <br />
-          <span class="body-text">
-            Coming soon
+            This page is for quick at-a-glance examples and not meant to replace any QWeb keyword documentation. For the full documentation, see the <a href="https://qentinelqi.github.io/qweb/QWeb.html" target="_blank">latest generated library page</a>. Eventually, a playground will be established for learning how to use QWeb keywords. Currently, you can follow the <a href="https://github.com/qentinelqi/qweb_workshop" target="_blank">QWeb workshop tutorials</a>.
           </span>
         </v-col>
       </v-row>
@@ -136,8 +130,26 @@
           <span class="hook-mini" style="color: #0180a0 !important;">Browser</span>
           <br />
           <span class="body-text">
-            Coming soon
+            These keywords allow you to interact with the browser given you have the web driver(s) installed.
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Open Browser&nbsp;&nbsp;http://example.com&nbsp;&nbsp;chrome<br />
+                Open Browser&nbsp;&nbsp;http://example.com&nbsp;&nbsp;firefox<br />
+                Close Browser<br />
+                Close All Browsers<br />
+                Switch Window&nbsp;&nbsp;NEW<br />
+                Switch Window&nbsp;&nbsp;2<br />
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Browser" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Browser Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="clicking">
@@ -147,6 +159,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Interaction" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Interaction Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="typing">
@@ -156,6 +181,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Input" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Input Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="drop-downs">
@@ -165,6 +203,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Dropdown" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Drop Down Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="checkboxes">
@@ -174,6 +225,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Checkbox" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Checkbox Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="tables">
@@ -183,15 +247,41 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Tables" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Table Keywords
+          </v-btn>
         </v-col>
       </v-row>
-      <v-row id="get-data">
+      <v-row id="getters">
         <v-col cols="auto" class="text-left">
-          <span class="hook-mini" style="color: #0180a0 !important;">Get Data</span>
+          <span class="hook-mini" style="color: #0180a0 !important;">Getters</span>
           <br />
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Getters" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Getter Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="files">
@@ -201,6 +291,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=File" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All File Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="frames">
@@ -210,6 +313,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html#Use%20Frame" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Frame Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="verification">
@@ -219,6 +335,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Verification" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Verification Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="miscellaneous">
@@ -228,6 +357,19 @@
           <span class="body-text">
             Coming soon
           </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Miscellaneous Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row id="configuration">
@@ -237,6 +379,19 @@
           <span class="body-text">
           Coming soon
         </span>
+          <v-card outlined class="feature-card mt-4">
+            <v-card rounded flat>
+              <v-card-text class="code-lg">
+                Coming soon
+              </v-card-text>
+            </v-card>
+          </v-card>
+          <v-btn small outlined color="#0180a0" style="margin-top:1rem;" href="https://qentinelqi.github.io/qweb/QWeb.html?tag=Config" target="_blank">
+            <v-icon color="#0180a0" left>
+              mdi-chevron-right
+            </v-icon>
+            See All Configuration Keywords
+          </v-btn>
         </v-col>
       </v-row>
       <v-row>

@@ -110,7 +110,7 @@
       <router-view/>
     </v-main>
 
-    <v-footer outlined id="footer">
+    <v-footer outlined id="footer" v-if="this.$route.name !== 'Examples'">
       <v-container>
         <v-row>
           <v-col cols="0" class="text-left">

@@ -14,6 +14,23 @@
           </span>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="hook-sm">Contact</span>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="body-text">
+            The best way to get in touch with QWeb developers is through our channel in the official Robot Framework Slack. <a href="https://robotframework.slack.com/archives/C029L0N3N81" target="_blank">Join now</a>.
+          </span>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="hook-sm">Stories</span>
+        </v-col>
+      </v-row>
       <v-row v-if="$vuetify.breakpoint.mdAndUp">
         <v-col cols="0" class="text-left">
           <span class="hook-mini" style="color: #0180a0 !important;">Building open source automation library</span>
@@ -96,6 +113,11 @@
             </v-icon>
             Read more
           </v-btn>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="hook-sm">History</span>
         </v-col>
       </v-row>
       <v-row>

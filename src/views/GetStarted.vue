@@ -46,6 +46,24 @@
         </v-col>
     </v-row>
     <v-row>
+      <v-col cols="auto">
+        <v-btn outlined color="#0180a0" style="margin-top:1rem;" to="/examples">
+          <v-icon color="#0180a0" left>
+            mdi-web
+          </v-icon>
+          Learn QWeb
+        </v-btn>
+      </v-col>
+      <v-col cols="auto">
+        <v-btn outlined color="#0180a0" style="margin-top:1rem;" href="https://robotframework.org/#getting-started" target="_blank">
+          <v-icon color="#0180a0" left>
+            mdi-robot
+          </v-icon>
+          Learn Robot
+        </v-btn>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col cols="0" style="margin:2rem;">
       </v-col>
     </v-row>
