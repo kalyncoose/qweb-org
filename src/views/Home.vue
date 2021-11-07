@@ -285,6 +285,66 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col cols="0" class="text-center">
+          <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">FAQ</span>
+          <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">FAQ</span>
+        </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-col cols="0">
+          <v-expansion-panels accordion>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">What is QWeb?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                QWeb is an open-source Robot Framework web test automation library. It is free for you to use in your projects to create the most efficient and maintainable test automation.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Do I have to pay for using QWeb?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                No, it is open-source and you do not need to pay anything for it.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Where was QWeb created and why?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                QWeb was created at Qentinel by Qentinelians. And Qentinel is committed to supporting the development of QWeb. Qentinelians were not satisifed with the detection capabilities and stability of the Robot framework’s Selenium2Library. Also, we strongly believe in keyword-driven testing. Thus QWeb was created as a part of PaceWords philiosphy, an extremely robust and stable keyword-driven test automation library for web application automation.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Do companies use QWeb?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                Yes, a lot companies have built their test automation using QWeb: <a href="https://qentinel.com/customers/metso/" target="_blank">Metso Outotect</a>, <a href="https://qentinel.com/customers/finnish-tax-administration/" target="_blank">Finnish Tax Administration (Vero)</a>, <a href="https://qentinel.com/customers/ponsse-information-systems-guarantee-customer-satisfaction/" target="_blank">Ponsse</a>, <a href="https://qentinel.com/customers/elisa/" target="_blank">Elisa</a> to name a few.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Can I contribute to QWeb’s development and how?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                Yes, you are most welcome to contribute to QWeb development and <a href="https://github.com/qentinelqi/qweb/blob/master/CONTRIBUTING.md" target="_blank">become part of the ever-growing community</a>.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">I found a bug in QWeb what should I do?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                Excellent, let’s improve QWeb. You could raise a bug report or make a fix and create a pull request. Here are more instructions on <a href="https://github.com/qentinelqi/qweb/blob/master/CONTRIBUTING.md" target="_blank">joining the QWeb community</a>.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Who is Qentinel and Copado?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                Qentinel is the company that originally founded Robot Framework and QWeb, Copado acquired Qentinel in 2021.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header class="question">Does QWeb have a community?</v-expansion-panel-header>
+              <v-expansion-panel-content class="answer">
+                Yes! Feel free to <a href="https://robotframework.slack.com/archives/C029L0N3N81" target="_blank">join our Slack community</a> and participate in the conversation around QWeb.
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="0" style="margin:2rem;">
         </v-col>
       </v-row>
@@ -455,6 +515,18 @@ export default {
   font-size:1rem;
   font-weight:300;
   line-height:2rem;
+}
+
+.question {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #0180a0;
+}
+
+.answer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #596275;
 }
 
 </style>
