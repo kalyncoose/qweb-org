@@ -200,7 +200,7 @@
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
-            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
+            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tools and community for test automation.</v-card-text>
             <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-tools
@@ -212,7 +212,7 @@
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-check-circle</v-icon>Companies Trust QWeb</v-card-title>
-            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#E54B00;">1,000,000</span> tests using the QWeb library.</v-card-text>
+            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#0180a0;">1,000,000</span> tests using the QWeb library.</v-card-text>
             <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://qentinel.com/qweb-open-source-automation-library" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-newspaper
@@ -250,7 +250,7 @@
         <v-col cols="auto">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
-            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
+            <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tools and community for test automation.</v-card-text>
             <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-tools
@@ -262,7 +262,7 @@
         <v-col cols="auto">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-check-circle</v-icon>Companies Trust QWeb</v-card-title>
-            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#E54B00;">1,000,000</span> tests using the QWeb library.</v-card-text>
+            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#0180a0;">1,000,000</span> tests using the QWeb library.</v-card-text>
             <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://qentinel.com/qweb-open-source-automation-library" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-newspaper
@@ -399,7 +399,7 @@ export default {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #E54B00 !important;
+  color: #596275 !important;
 }
 
 .code-sm {
@@ -407,7 +407,7 @@ export default {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: #E54B00 !important;
+  color: #596275 !important;
 }
 
 .splash-lg {
