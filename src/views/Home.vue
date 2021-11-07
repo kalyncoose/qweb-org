@@ -48,6 +48,10 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col cols="0" style="margin:1rem;">
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="0" class="text-center">
           <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Features</span>
           <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Features</span>
@@ -171,6 +175,10 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col cols="0" style="margin:1rem;">
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="0" class="text-center">
           <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Why use QWeb?</span>
           <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Why use QWeb?</span>
@@ -193,11 +201,35 @@
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
             <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
-            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org/" target="_blank">
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-tools
               </v-icon>
-              Read More
+              Try Robot
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="6">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-check-circle</v-icon>Companies Trust QWeb</v-card-title>
+            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#E54B00;">1,000,000</span> tests using the QWeb library.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://qentinel.com/qweb-open-source-automation-library" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-newspaper
+              </v-icon>
+              Read Stories
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="6">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-clock-fast</v-icon>Easy to Learn</v-card-title>
+            <v-card-text class="feature-details">While QWeb has a 150+ keywords, only a handful are necessary for most testing. Check out the examples below!</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" to="/examples">
+              <v-icon color="#0180a0" left>
+                mdi-file-code
+              </v-icon>
+              See Examples
             </v-btn>
           </v-card>
         </v-col>
@@ -219,17 +251,41 @@
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-robot</v-icon>Robot Framework</v-card-title>
             <v-card-text class="feature-details">QWeb is an independent library built for Robot, one of the largest open-source tool and community for test automation.</v-card-text>
-            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org/" target="_blank">
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://robotframework.org" target="_blank">
               <v-icon color="#0180a0" left>
                 mdi-tools
               </v-icon>
-              Read More
+              Try Robot
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-check-circle</v-icon>Companies Trust QWeb</v-card-title>
+            <v-card-text class="feature-details">According to <a href="https://www.copado.com/platform/test" target="_blank">Copado Robotics</a> (formerly Qentinel Pace), there are more than <span style="color:#E54B00;">1,000,000</span> tests using the QWeb library.</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" href="https://qentinel.com/qweb-open-source-automation-library" target="_blank">
+              <v-icon color="#0180a0" left>
+                mdi-newspaper
+              </v-icon>
+              Read Stories
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col cols="auto">
+          <v-card outlined class="feature-card">
+            <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-clock-fast</v-icon>Easy to Learn</v-card-title>
+            <v-card-text class="feature-details">While QWeb has a 150+ keywords, only a handful are necessary for most testing. Check out the examples below!</v-card-text>
+            <v-btn large outlined color="#0180a0" style="max-width:200px;margin-left:auto;margin-right:auto;display:flex;margin-bottom:10px;" to="/examples">
+              <v-icon color="#0180a0" left>
+                mdi-file-code
+              </v-icon>
+              See Examples
             </v-btn>
           </v-card>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="0" style="margin:1rem;">
+        <v-col cols="0" style="margin:2rem;">
         </v-col>
       </v-row>
     </v-container>
@@ -237,7 +293,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Home',
   data: () => {

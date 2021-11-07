@@ -53,13 +53,12 @@
       <v-btn outlined color="#0180a0" v-if="$vuetify.breakpoint.mdAndUp" elevation="0" href="https://github.com/qentinelqi/qweb/" target="_blank" class="mr-2" fab small>
         <v-icon color="#E54B00">mdi-github</v-icon>
       </v-btn>
-      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp" @click="drawer=true;" style="color:#596275;background-color:#f5f5f5 !important;"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp" @click="drawer=true;" style="color:#596275;"></v-app-bar-nav-icon>
     </v-app-bar>
 
     <v-navigation-drawer
         v-model="drawer"
-        app
-        absolute
+        fixed
         temporary>
       <v-list nav>
         <v-list-item to="/">
@@ -110,6 +109,47 @@
     <v-main>
       <router-view/>
     </v-main>
+
+    <v-footer outlined id="footer">
+      <v-container>
+        <v-row>
+          <v-col cols="0" class="text-left">
+            <span class="footer-hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Make the switch today...</span>
+            <span class="footer-hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Make the switch today...</span>
+          </v-col>
+          <v-col cols="0" class="text-left">
+            <v-btn large outlined color="#E54B00" style="width:inherit;max-width:400px !important;" to="/get-started">
+              <v-icon color="#E54B00" left>
+                mdi-rocket
+              </v-icon>
+              Get Started
+            </v-btn>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="0" class="text-left">
+            <v-list nav dense class="transparent">
+              <v-list-item to="/" class="nav-item">Home</v-list-item>
+              <v-list-item to="/get-started" class="nav-item">Get Started</v-list-item>
+              <v-list-item to="/examples" class="nav-item">Examples</v-list-item>
+              <v-list-item to="/library" class="nav-item">Library</v-list-item>
+              <v-list-item to="/about" class="nav-item">About</v-list-item>
+            </v-list>
+          </v-col>
+          <v-col cols="0">
+            <v-btn outlined color="#0180a0" elevation="0" href="https://robotframework.slack.com/archives/C029L0N3N81" target="_blank" class="mr-2" fab>
+              <v-icon x-large color="#E54B00">mdi-slack</v-icon>
+            </v-btn>
+
+            <v-btn outlined color="#0180a0" elevation="0" href="https://github.com/qentinelqi/qweb/" target="_blank" class="mr-2" fab>
+              <v-icon x-large color="#E54B00">mdi-github</v-icon>
+            </v-btn>
+
+            <p class="footer-text">&copy; 2021 QWeb, <a href="https://qweblibrary.org">qweblibrary.org</a>. All rights reserved. <a href="https://github.com/qentinelqi/qweb" target="_blank">QWeb</a> is provided to the public by the <a href="https://github.com/qentinelqi/qweb/blob/master/LICENSE" target="_blank">Apache License 2.0</a>.</p>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-footer>
   </v-app>
 </template>
 
@@ -165,7 +205,39 @@ export default {
 .nav-item {
   font-family:'Roboto', sans-serif;
   font-weight: 900;
-  color:#0180a0;
+  color:#0180a0 !important;
+}
+
+#footer {
+  padding-left:10%;
+  padding-right:10%;
+  background-size: 100vw;
+  background-position-x: center;
+  background-position-y: bottom;
+  background: url("./assets/blobs3.svg") no-repeat bottom !important;
+  overflow-x: hidden;
+}
+
+.footer-hook-lg {
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size:2rem;
+  color:#596275;
+}
+
+.footer-hook-sm {
+  font-family: 'Roboto', sans-serif;
+  font-weight:600;
+  font-size:1rem;
+  color:#596275;
+}
+
+.footer-text {
+  padding-top:25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  font-size:0.8rem;
+  color:#596275;
 }
 
 </style>
