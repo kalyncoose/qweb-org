@@ -137,11 +137,11 @@
             </v-list>
           </v-col>
           <v-col cols="0">
-            <v-btn outlined color="#0180a0" elevation="0" href="https://robotframework.slack.com/archives/C029L0N3N81" target="_blank" class="mr-2" fab>
+            <v-btn outlined color="#0180a0" elevation="0" href="https://robotframework.slack.com/archives/C029L0N3N81" target="_blank" class="mr-2 mt-2" fab>
               <v-icon x-large color="#E54B00">mdi-slack</v-icon>
             </v-btn>
 
-            <v-btn outlined color="#0180a0" elevation="0" href="https://github.com/qentinelqi/qweb/" target="_blank" class="mr-2" fab>
+            <v-btn outlined color="#0180a0" elevation="0" href="https://github.com/qentinelqi/qweb/" target="_blank" class="mr-2 mt-2" fab>
               <v-icon x-large color="#E54B00">mdi-github</v-icon>
             </v-btn>
 

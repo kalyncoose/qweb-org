@@ -1,25 +1,31 @@
 <template>
   <div>
-    <v-sheet color="#eaeaea">
-      <v-container fluid>
-        <v-row>
-          <v-col></v-col>
-          <v-col md>
-            <div class="mx-auto">
-              <h1>Coming Soon</h1>
-            </div>
-          </v-col>
-          <v-col></v-col>
-        </v-row>
-      </v-container>
-    </v-sheet>
+    <v-container class="body-container">
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Examples</span>
+          <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Examples</span>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="auto" class="text-left">
+          <span class="body-text">
+            Examples coming soon...<br /><br />
+          </span>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="0" style="margin:2rem;">
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Tutorials',
+  name: 'Examples',
   data: () => {
     return {
 
@@ -28,6 +34,9 @@ export default {
   components: {
 
   },
+  methods: {
+
+  }
 }
 </script>
 

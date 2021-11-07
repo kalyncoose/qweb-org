@@ -1,5 +1,5 @@
 <template>
-  <div class="bg">
+  <div class="bg1">
     <v-container class="body-container">
       <v-row v-if="$vuetify.breakpoint.mdAndUp">
         <v-col cols="0" class="text-center">
@@ -318,7 +318,7 @@ export default {
 
 <style lang="scss">
 
-.bg {
+.bg1 {
   background-size: 100vmax;
   background-position-x: center;
   background-position-y: 4.1rem;
