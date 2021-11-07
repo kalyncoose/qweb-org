@@ -468,7 +468,7 @@ export default {
   clear: right;
   color:#596275;
   line-height:normal;
-  text-align:left;
+  text-align:right;
   border-right:5px solid #0180a0;
   background:rgba(1,128,160,0.1);
   padding: 10px 20px;
