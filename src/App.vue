@@ -132,7 +132,7 @@
               <v-list-item to="/" class="nav-item">Home</v-list-item>
               <v-list-item to="/get-started" class="nav-item">Get Started</v-list-item>
               <v-list-item to="/examples" class="nav-item">Examples</v-list-item>
-              <v-list-item to="/library" class="nav-item">Library</v-list-item>
+              <v-list-item href="https://qentinelqi.github.io/qweb/QWeb.html" target="_blank" class="nav-item">Library</v-list-item>
               <v-list-item to="/about" class="nav-item">About</v-list-item>
             </v-list>
           </v-col>
