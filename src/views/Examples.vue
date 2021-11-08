@@ -1,5 +1,5 @@
 <template>
-  <div id="#top">
+  <div id="#top" class="bg2">
     <v-fab-transition>
       <v-btn href="#top"
           color="primary"

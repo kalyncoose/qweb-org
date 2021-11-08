@@ -323,14 +323,6 @@ export default {
 
 <style lang="scss">
 
-.bg2 {
-  background-size: 100vmax;
-  background-position-x: center;
-  background-position-y: center;
-  background: url("../assets/blobs.svg") no-repeat center;
-  overflow-x: hidden;
-}
-
 .hook-mini {
   font-family: 'Roboto', sans-serif;
   font-weight:600;

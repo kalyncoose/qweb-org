@@ -1,0 +1,11 @@
+<svg viewBox="0 0 1193 221" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="b" width="6.3" height="6.3" x="152.315" y="123.018" patternUnits="userSpaceOnUse">
+      <use xlink:href="#a" transform="scale(.15)"/>
+    </pattern>
+    <image id="a" width="42" height="42" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAABGdBTUEAALGN5fIAKQAAAOFJREFUWAntlEEKwjAQRTOeya3gYXqFbARdiZtcoYcR3HqmjmNCkEImBmekm18ogUzm/99HMyHgAQEQAAEQAAEQAAEQAIHtCJCXNU/TQbRiINpnTeanrInm+eHh4RJUQp4kzFXetR7REpjPEvZmDbsW/kEtkyS6S6Bds72EPVrJtsWbjupmVEO+W8oHRLV7sGAPWv/JnuHImV6/1OxBvxh4le1By+3u5xk501dwIZpkJC2qT6kltT5YMBPNt5no0gz7GU/mWWoeTxXIvwd+9cEKAiAAAiAAAiAAAiAAAlsQeAGqMDkE77oxYAAAAABJRU5ErkJggg=="/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M527.9 962.18c204.981 0 371.152-166.103 371.152-371 0-204.898-132.688-461.862-337.67-461.862-204.982 0-31.133 363.108-301.414 461.861-270.281 98.753 62.95 371 267.931 371z" fill="url(#b)" fill-rule="nonzero" transform="rotate(-150 266.247 543.762)"/>
+  </g>
+</svg>

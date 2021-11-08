@@ -57,7 +57,7 @@
           <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Features</span>
         </v-col>
       </v-row>
-      <v-row v-if="$vuetify.breakpoint.mdAndUp">
+      <v-row v-if="$vuetify.breakpoint.mdAndUp" class="bg3">
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-xml</v-icon>Avoid XPaths</v-card-title>
@@ -184,7 +184,7 @@
           <span class="hook-sm" v-if="$vuetify.breakpoint.mobile && !$vuetify.breakpoint.mdAndUp">Why use QWeb?</span>
         </v-col>
       </v-row>
-      <v-row v-if="$vuetify.breakpoint.mdAndUp">
+      <v-row v-if="$vuetify.breakpoint.mdAndUp" class="bg4">
         <v-col cols="6">
           <v-card outlined class="feature-card">
             <v-card-title class="feature-icon feature-title"><v-icon x-large class="feature-icon" color="primary" left>mdi-github</v-icon>Open Source</v-card-title>
@@ -383,6 +383,26 @@ export default {
   background-position-x: center;
   background-position-y: 4.1rem;
   background: url("../assets/bg.png") no-repeat center 4.1rem;
+  overflow-x: hidden;
+}
+
+.bg2 {
+  background-size: 100vmax;
+  background-position-x: center;
+  background-position-y: center;
+  background: url("../assets/blobs.svg") no-repeat center;
+  overflow-x: hidden;
+}
+
+.bg3 {
+  background-size: 100vmax;
+  background: url("../assets/blobs-left.svg") repeat center;
+  overflow-x: hidden;
+}
+
+.bg4 {
+  background-size: 100vmax;
+  background: url("../assets/blobs-right.svg") repeat center;
   overflow-x: hidden;
 }
 
