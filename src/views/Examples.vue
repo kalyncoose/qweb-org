@@ -1,6 +1,6 @@
 <template>
   <div id="#top" class="bg2">
-    <v-container class="body-container" style="padding-left:5rem;">
+    <v-container class="body-container">
       <v-row>
         <v-col cols="auto" class="text-left">
           <span class="hook-lg" v-if="$vuetify.breakpoint.mdAndUp">Examples</span>
@@ -479,9 +479,7 @@ export default {
 
   },
   methods: {
-    alert() {
-      console.log('alert')
-    }
+
   }
 }
 </script>
