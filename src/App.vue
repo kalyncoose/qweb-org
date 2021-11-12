@@ -145,7 +145,7 @@
               <v-icon x-large color="#E54B00">mdi-github</v-icon>
             </v-btn>
 
-            <p class="footer-text">&copy; 2021 QWeb, <a href="https://qweblibrary.org">qweblibrary.org</a>. All rights reserved. <a href="https://github.com/qentinelqi/qweb" target="_blank">QWeb</a> is provided to the public by the <a href="https://github.com/qentinelqi/qweb/blob/master/LICENSE" target="_blank">Apache License 2.0</a>.</p>
+            <p class="footer-text">&copy; 2021 QWeb, <a href="https://qweblibrary.org">qweblibrary.org</a>. All rights reserved. <a href="https://github.com/qentinelqi/qweb" target="_blank">QWeb</a> is provided to the public by the <a href="https://github.com/qentinelqi/qweb/blob/master/LICENSE" target="_blank">Apache License 2.0</a>. This website is maintained solely by the QWeb community.</p>
           </v-col>
         </v-row>
       </v-container>
