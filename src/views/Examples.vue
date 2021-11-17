@@ -10,7 +10,7 @@
       <v-row>
         <v-col cols="auto" class="text-left">
           <span class="body-text">
-            This page is for quick searching examples by tag in the QWeb documentation. Eventually, a playground will be established for learning how to use QWeb keywords. Currently, you can follow the <a href="https://github.com/qentinelqi/qweb_workshop" target="_blank">QWeb workshop tutorials</a>.
+            Quickly search examples by tag in the QWeb documentation. Looking for more than just examples? <router-link to="/workshop">Visit the QWeb Workshop</router-link>
           </span>
         </v-col>
       </v-row>
@@ -485,6 +485,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+.tag-card {
+  min-width: 100%;
+  min-height: 100%;
+}
 
 .tag-card:hover {
   background: #d0e7ed;

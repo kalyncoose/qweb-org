@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import GetStarted from '../views/GetStarted.vue'
 import Examples from "../views/Examples.vue"
+import Workshop from "../views/Workshop.vue"
 import About from "../views/About.vue"
 import Error from "../views/Error.vue"
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/examples',
     name: 'Examples',
     component: Examples
+  },
+  {
+    path: '/workshop',
+    name: 'Workshop',
+    component: Workshop
   },
   {
     path: '/about',

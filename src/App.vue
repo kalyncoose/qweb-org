@@ -41,6 +41,12 @@
         </v-icon>
         Library
       </v-btn>
+      <v-btn v-if="$vuetify.breakpoint.mdAndUp" outlined color="#0180a0" class="mr-4" to="/workshop">
+        <v-icon color="#E54B00" left>
+          mdi-hammer-wrench
+        </v-icon>
+        Workshop
+      </v-btn>
       <v-btn v-if="$vuetify.breakpoint.mdAndUp" outlined color="#0180a0" class="mr-4" to="/about">
         <v-icon color="#E54B00" left>
           mdi-account
@@ -89,6 +95,13 @@
           <v-list-item-title class="nav-item">Library</v-list-item-title>
         </v-list-item>
 
+        <v-list-item to="/workshop">
+          <v-list-item-icon>
+            <v-icon color="#E54B00">mdi-hammer-wrench</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title class="nav-item">Workshop</v-list-item-title>
+        </v-list-item>
+
         <v-list-item to="/about">
           <v-list-item-icon>
             <v-icon color="#E54B00">mdi-account</v-icon>
@@ -110,7 +123,7 @@
       <router-view/>
     </v-main>
 
-    <v-footer outlined id="footer" v-if="this.$route.name !== 'Examples'">
+    <v-footer outlined id="footer">
       <v-container>
         <v-row>
           <v-col cols="0" class="text-left">
@@ -133,6 +146,7 @@
               <v-list-item to="/get-started" class="nav-item">Get Started</v-list-item>
               <v-list-item to="/examples" class="nav-item">Examples</v-list-item>
               <v-list-item href="https://qentinelqi.github.io/qweb/QWeb.html" target="_blank" class="nav-item">Library</v-list-item>
+              <v-list-item to="/workshop" class="nav-item">Workshop</v-list-item>
               <v-list-item to="/about" class="nav-item">About</v-list-item>
             </v-list>
           </v-col>
